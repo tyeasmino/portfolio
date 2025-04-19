@@ -231,3 +231,74 @@
   font-weight: 900;
   font-family: 'Poppins', sans-serif; /* Use a rounded bold font */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Experience Cards */
+.hover-border-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid transparent;
+}
+
+.hover-border-card span {
+  position: absolute;
+  background: currentColor;
+  transition: all 0.4s ease;
+}
+
+/* Top border */
+.hover-border-card .border-top {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+}
+
+/* Right border */
+.hover-border-card .border-right {
+  top: 0;
+  right: 0;
+  width: 1px;
+  height: 0%;
+}
+
+/* Bottom border */
+.hover-border-card .border-bottom {
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 1px;
+}
+
+/* Left border */
+.hover-border-card .border-left {
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  height: 0%;
+}
+
+.hover-border-card:hover .border-top,
+.hover-border-card:hover .border-bottom {
+  width: 100%;
+}
+
+.hover-border-card:hover .border-right,
+.hover-border-card:hover .border-left {
+  height: 100%;
+}
+

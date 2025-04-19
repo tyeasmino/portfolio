@@ -6,8 +6,8 @@ import { Download } from 'lucide-react'
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between">
-      <Link href="/" className="p-4 flex items-center gap-2">
+    <nav className="flex items-center justify-between p-5">
+      <Link href="/" className=" flex items-center gap-2">
         <LogoComponent />
         <SignatureLogo />
       </Link>
@@ -54,7 +54,7 @@ const Navbar = () => {
         </Link>
       </div>
       <div>
-        <Link href="" className="flex items-center py-2 rounded font-bold text-md px-8 text-white gap-2 md:gap-5  bg-black dark:bg-white dark:text-black"><span className='text-sm md:text-base'>Resume</span> <Download className="w-5 h-5" /> </Link>
+        <Link href="https://drive.google.com/file/d/1-fxg1awrK3VFXawP9mQAv_tRDRVIKRlL/view?usp=sharing" target='_blank'  className="flex items-center py-2 rounded font-bold text-md px-8 text-white gap-2 md:gap-5  bg-black dark:bg-white dark:text-black"><span className='text-sm md:text-base'>Resume</span> <Download className="w-5 h-5" /> </Link>
       </div>
     </nav>
   )

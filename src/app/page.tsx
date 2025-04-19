@@ -1,6 +1,8 @@
 import AboutMeComponent from "@/components/AboutMeComponent";
 import ExperienceComponent from "@/components/ExperienceComponent";
+import Footer from "@/components/Footer";
 import HeroComponent from "@/components/HeroComponent";
+import MyProjects from "@/components/MyProjects";
 import SkillComponent from "@/components/SkillComponent";
 
 
@@ -14,8 +16,11 @@ export default function Home() {
       
       <ExperienceComponent />
 
+      <MyProjects />
+
       <AboutMeComponent />
 
+      <Footer />
     </div>
   );
 }

@@ -38,7 +38,7 @@ const timeline = [
 ];
 
 export default function Timeline() {
-  const sectionRef = useRef(null); 
+  const sectionRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -59,13 +59,13 @@ export default function Timeline() {
   return (
     <section
       ref={sectionRef}
-      className="relative bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8"
+      className="relative bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8 md:my-10"
     >
       {/* Title */}
       <div className="text-center mb-20">
         <h2 className="text-3xl font-bold text-black dark:text-white flex items-center justify-center gap-2">
           <GiClockwork className="w-8 h-8 animate-pulse" />
-          My Experiences 
+          My Experiences
         </h2>
       </div>
 
@@ -94,9 +94,8 @@ export default function Timeline() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
-            className={`relative flex flex-col md:flex-row items-center ${
-              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-            }`}
+            className={`relative flex flex-col md:flex-row items-center ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+              }`}
           >
             {/* Timeline Logo Dot */}
             <div className="w-14 h-14 bg-white dark:bg-black rounded-full flex items-center justify-center shadow-md border border-gray-300 dark:border-white absolute left-1/2 transform -translate-x-1/2 -top-7 z-10">
@@ -111,12 +110,30 @@ export default function Timeline() {
 
             {/* Card */}
             <div className="w-full md:w-1/2 px-4 md:px-10 mt-10 md:mt-0">
-              <div className="bg-white dark:bg-black dark:border dark:border-gray-600 px-6 pb-6 pt-12 md:p-6 rounded-xl shadow text-black dark:text-white">
-                <p className="text-sm font-semibold text-gray-400 mb-1">{item.year}</p>
+              <div
+                className={`
+                          hover-border-card relative rounded-xl shadow-md group
+                          bg-white text-black dark:bg-black dark:text-white
+                          transition-colors duration-1000
+                          hover:bg-black hover:text-white
+                          dark:hover:bg-white dark:hover:text-black
+                          px-6 pb-6 pt-12 md:p-6 dark:shadow-white
+                        `}
+              >
+                {/* Borders */}
+                <span className="border-top"></span>
+                <span className="border-right"></span>
+                <span className="border-bottom"></span>
+                <span className="border-left"></span>
+
+                <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-1">{item.year}</p>
                 <h3 className="md:text-xl font-bold mb-2">{item.title}</h3>
                 <p className="text-sm leading-relaxed">{item.description}</p>
               </div>
             </div>
+
+
+
           </motion.div>
         ))}
       </div>
