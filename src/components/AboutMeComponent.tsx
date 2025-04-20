@@ -22,15 +22,15 @@ export default function AboutMe() {
           About Me
         </h2>
         <p className="text-base md:text-lg leading-relaxed text-justify tracking-wide">
-          Hi, I'm Tamima Yeasmin — a full stack developer with a background in medical sciences. I began my career in histopathology, where precision, discipline, and problem-solving were essential — qualities I now bring into software development.
+          Hi, I&#39;m Tamima Yeasmin — a full stack developer with a background in medical sciences. I began my career in histopathology, where precision, discipline, and problem-solving were essential — qualities I now bring into software development.
         </p>
 
         <p className="text-base md:text-lg leading-relaxed text-justify tracking-wide">
-          Curiosity led me to tech, where I trained in HTML, CSS, JavaScript, Tailwind CSS and learning React, and Next.js. I’ve since built responsive, scalable apps with a focus on clean code, thoughtful design, and full stack functionality.
+          Curiosity led me to tech, where I trained in HTML, CSS, JavaScript, Tailwind CSS and learning React, and Next.js. I&#39;ve since built responsive, scalable apps with a focus on clean code, thoughtful design, and full stack functionality.
         </p>
 
         <p className="text-base md:text-lg leading-relaxed text-justify tracking-wide">
-          I’m passionate about continuous learning, exploring new tools, and building user-centered digital products that are both intuitive and impactful. Let’s create something meaningful together.
+          I&#39;m passionate about continuous learning, exploring new tools, and building user-centered digital products that are both intuitive and impactful. Let&#39;s create something meaningful together.
         </p>
 
       </div>
