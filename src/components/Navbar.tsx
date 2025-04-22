@@ -13,48 +13,56 @@ const Navbar = () => {
       </Link>
 
       <div className="hidden md:flex gap-5 items-center">
-        <Link href=""  >
+        <a href="#aboutMe">
           <span className="relative inline-block text-md font-semibold group px-1">
             About Me
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
           </span>
-        </Link>
+        </a>
 
-        <Link href="">
+        <a href="#skills">
           <span className="relative inline-block text-md font-semibold group px-1">
             Skills
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
           </span>
-        </Link>
+        </a>
 
-        <Link href="" >
+        <a href="#projects">
           <span className="relative inline-block text-md font-semibold group px-1">
             Projects
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black dark:bg-white  transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
           </span>
-        </Link>
+        </a>
 
-        <Link href="">
+        <a href="#experiences">
           <span className="relative inline-block text-md font-semibold group px-1">
             Experiences
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
           </span>
-        </Link>
+        </a>
 
-        <Link href="">
+        <a href="#services">
+          <span className="relative inline-block text-md font-semibold group px-1">
+            Services
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+          </span>
+        </a>
+
+        <a href="#contactMe">
           <span className="relative inline-block text-md font-semibold group px-1">
             Contact Me
-            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
-            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute right-0 top-0 w-0 h-[2px] bg-black dark:bg-white transition-all duration-300 group-hover:w-full"></span>
           </span>
-        </Link>
+        </a>
       </div>
       <div>
-        <Link href="https://drive.google.com/file/d/1-fxg1awrK3VFXawP9mQAv_tRDRVIKRlL/view?usp=sharing" target='_blank'  className="flex items-center py-2 rounded font-bold text-md px-8 text-white gap-2 md:gap-5  bg-black dark:bg-white dark:text-black"><span className='text-sm md:text-base'>Resume</span> <Download className="w-5 h-5" /> </Link>
+        <Link href="https://drive.google.com/file/d/1-fxg1awrK3VFXawP9mQAv_tRDRVIKRlL/view?usp=sharing" target='_blank' className="flex items-center py-2 rounded font-bold text-md px-8 text-white gap-2 md:gap-5  bg-black dark:bg-white dark:text-black"><span className='text-sm md:text-base'>Resume</span> <Download className="w-5 h-5" /> </Link>
       </div>
     </nav>
   )

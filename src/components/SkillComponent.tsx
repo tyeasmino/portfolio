@@ -41,7 +41,7 @@ const SkillComponent = () => {
   
 
   return (
-    <div className="px-6 py-12 my-6  rounded-xl shadow-xl bg-white text-black transition-colors duration-500 dark:bg-black dark:text-white">
+    <div id='skills' className="scroll-mt-24 px-6 py-12 my-6  rounded-xl shadow-xl bg-white text-black transition-colors duration-500 dark:bg-black dark:text-white">
       <h2 className="text-2xl font-bold mb-4">My Skill Journey</h2>
 
       <div className="flex  flex-wrap justify-center gap-2 md:gap-6 px-1 md:px-4 py-5 md:py-10 border border-dashed rounded-xl border-gray-400 dark:border-white">

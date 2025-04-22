@@ -57,9 +57,9 @@ export default function Timeline() {
   const rocketY = useTransform(scrollYProgress, [0, 1], [0, lineHeight]);
 
   return (
-    <section
+    <section id="experiences"
       ref={sectionRef}
-      className="relative bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8 md:my-10"
+      className="scroll-mt-24 relative bg-white dark:bg-black py-24 px-4 sm:px-6 lg:px-8 md:my-10"
     >
       {/* Title */}
       <div className="text-center mb-20">

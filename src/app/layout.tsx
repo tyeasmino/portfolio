@@ -32,16 +32,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${dancing.variable} antialiased bg-white text-black dark:bg-black dark:text-white transition-colors duration-300`}
       >
-         
 
+        <div className="sticky top-0 z-50  backdrop-blur-lg bg-opacity-70 dark:bg-opacity-70">
+          <div className="container mx-auto py-2">
+            <Navbar />
+          </div>
+        </div>
         <div className="container mx-auto py-2">
-          <Navbar />
           {children}
         </div>
       </body>
-    </html>
+
+    </html >
   );
 }

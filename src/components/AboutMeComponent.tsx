@@ -5,7 +5,7 @@ import AboutImg1 from 'public/aboutImg-removebg-preview.png'
 
 export default function AboutMe() {
   return (
-    <section className="min-h-full text-black dark:text-white px-6 py-10 flex flex-col md:flex-row items-center justify-center">
+    <section id="aboutMe" className="scroll-mt-24 min-h-full text-black dark:text-white px-6 py-10 flex flex-col md:flex-row items-center justify-center">
 
       <div className='w-full flex gpa-5 md:w-1/3'>
         <div className='border-3 rounded-md'>
